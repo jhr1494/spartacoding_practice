@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020년을 보내며</title>
+
+    <!-- 배포이미지 및 정보 -->
+    <meta property="og:image" content="https://image.freepik.com/free-vector/2021-happy-new-year-with-illustration-of-golden-numbers-and-golden-ribbons_193405-137.jpg">
+    <meta property="og:title" content="Happy new year!">
+    <meta property="og:description" content="다가올 2021년..">
+
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="https://freepngimg.com/download/christmas/26196-6-christmas-stocking.png">
+
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+
+        }
+
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG18366.png);
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+            width: 300px;
+            height: 300px;
+
+            background-image: url(https://static.wixstatic.com/media/7f1f3f_516c6891b1d740fab62a4184f1bc5a62~mv2.gif);
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+            border-radius: 150px;
+
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+
+
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: ivory;
+            width: 400px;
+            margin: auto;
+
+            color: brown;
+            padding: 30px;
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 0px white;
+
+
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+
+        }
+    </style>
+
+    <script>
+        function open_letter() {
+
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+
+        }
+
+        function go_rtan() {
+            alert('새해 복 많이 받으세요 ~');
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">봉투를 열어주세요 !</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>너무 짧게 느껴졌던 2020년 !</h1>
+
+        <div class="messagebox">
+            너무나 짧게 느껴진 <br/>
+            2020년이 지나고 있습니다. <br />
+            올해는 코로나를 비롯하여<br/>
+            너무 힘겨운 한 해 였습니다. <br />
+            곧 다가오는 2021년에는<br />
+            더욱 건강하고 즐거운 <br/>
+            2021년이 되길 바랍니다. <br />
+            새해 복 많이 받으세요 :)<br/>
+            <p class="from">2020.12.31 혜린</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
